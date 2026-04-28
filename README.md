@@ -201,3 +201,12 @@ python "03_(참고)mad-m(example)/main.py"
 - Cemri et al. (2025). Why Do Multi-Agent LLM Systems Fail? arXiv:2503.13657
 - Feng et al. (2025). Levels of Autonomy for AI Agents. arXiv:2506.12469
 - Suhanda & Pratami (2021). RACI Matrix Design for Managing Stakeholders. *IJIES*, Vol. 5, No. 2.
+
+---
+
+## 📄 라이선스
+
+MIT License © 2026 [Ji-Yeong Cheon](https://github.com/1000ji0)
+
+이 프로젝트는 MIT 라이선스 하에 공개됩니다.
+사용·수정·배포 시 출처를 표시해주세요.
