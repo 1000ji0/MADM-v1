@@ -1,0 +1,13 @@
+{
+  "A001": { "R": [], "A": ["final_output"], "C": ["A101"], "I": ["A201", "A202", "A301-A313"], "D": ["final_decision"] },
+  "A101": { "R": ["conflict_resolution", "menu_plan"], "A": ["reports_to_A001"], "C": ["A201", "A202"], "I": ["A301-A313"], "D": ["conflict_resolution_within_scope"] },
+  "A201": { "R": ["health_analysis"], "A": ["reports_to_A001"], "C": ["A101"], "I": ["A101"], "D": ["health_domain_decision"] },
+  "A202": { "R": ["budget_analysis"], "A": ["reports_to_A001"], "C": ["A101"], "I": ["A101"], "D": ["budget_domain_decision"] },
+  "A301": { "R": ["korean_recipe_health"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] },
+  "A302": { "R": ["japanese_recipe_health"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] },
+  "A303": { "R": ["chinese_recipe_health"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] },
+  "A311": { "R": ["korean_recipe_budget"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] },
+  "A312": { "R": ["japanese_recipe_budget"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] },
+  "A313": { "R": ["chinese_recipe_budget"], "A": ["reports_to_A101"], "C": [], "I": ["A101"], "D": ["cooking_method"] }
+}
+

@@ -1,0 +1,15 @@
+{
+  "order": [
+    "hard_constraints",
+    "medical_severity",
+    "budget",
+    "preferences"
+  ],
+  "weights": {
+    "hard_constraints": 1.0,
+    "medical_severity": 0.9,
+    "budget": 0.7,
+    "preferences": 0.5
+  }
+}
+

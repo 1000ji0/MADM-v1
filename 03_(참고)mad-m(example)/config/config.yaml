@@ -1,0 +1,82 @@
+# MAS Meal Recommendation System Configuration
+
+system:
+  name: "MAS-based Meal Recommendation System"
+  version: "1.0.0"
+  framework: "Google ADK (Gemini API)"
+
+agents:
+  orchestrator:
+    agent_id: "A001"
+    name: "System Orchestrator"
+    level: 0
+    autonomy: "L4"
+    inference_strategy: "ReAct"
+  
+  menu_planner:
+    agent_id: "A101"
+    name: "Menu Planner & Mediator"
+    level: 1
+    autonomy: "L3"
+    inference_strategy: "CoT"
+  
+  preference_health_analyzer:
+    agent_id: "A201"
+    name: "User Preference & Health Analyzer"
+    level: 2
+    autonomy: "L3"
+    inference_strategy: "CoT + Self-Refine"
+  
+  budget_market_analyzer:
+    agent_id: "A202"
+    name: "Budget & Market Analyzer"
+    level: 2
+    autonomy: "L3"
+    inference_strategy: "CoT + Self-Refine"
+  
+  chefs:
+    korean:
+      agent_id: "A301"
+      name: "Korean Chef"
+      level: 3
+      autonomy: "L2"
+      inference_strategy: "Few-shot Prompting"
+    
+    japanese:
+      agent_id: "A302"
+      name: "Japanese Chef"
+      level: 3
+      autonomy: "L2"
+      inference_strategy: "Few-shot Prompting"
+    
+    chinese:
+      agent_id: "A303"
+      name: "Chinese Chef"
+      level: 3
+      autonomy: "L2"
+      inference_strategy: "Few-shot Prompting"
+
+llm:
+  model: "gemini-2.0-flash-exp"
+  temperature: 0.7
+  max_tokens: 2048
+
+memory:
+  stm:
+    dialogue_context_limit: 10
+    temporary_menu_limit: 5
+  
+  ltm:
+    data_dir: "data"
+    persist: true
+
+tools:
+  nutrition_api:
+    enabled: true
+    mock_mode: true  # Set to false when using real API
+  
+  price_api:
+    enabled: true
+    mock_mode: true  # Set to false when using real API
+
+

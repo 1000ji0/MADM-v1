@@ -1,0 +1,21 @@
+
+## A201: User Preference & Health Analyzer
+
+RACID: Responsible (R), Consulted (C)
+Autonomy: L3 (Adaptive reasoning)
+Memory access: STM 읽기/쓰기, LTM 읽기
+
+설명:
+사용자 건강 정보(진단, 약물, 알레르기)를 분석하여 Hard/Soft 제약을 생성하고 의료적 중요도(critical/important/recommended)를 판단합니다. 협상 시 허용 가능한 완화치(max_relaxation)를 제공하고 대체안을 제시합니다.
+
+출력(예시 JSON):
+{
+  "critical_constraints": [{"type":"allergy","food":"갑각류","severity":"anaphylaxis"}],
+  "medical_constraints": [{"type":"sodium","limit":"≤2000mg/day","reason":"고혈압"}],
+  "nutritional_goals": [{"nutrient":"단백질","target":"≥60g/day","reason":"근성장"}],
+  "drug_interactions": [{"drug":"ACE억제제","avoid":"고칼륨 식품"}],
+  "negotiation_response": {"feasible": true, "max_relaxation":"...","rationale":"...","alternatives":[...]}
+}
+
+응답 지시: 의료 안전 최우선, 불확실 시 보수적 권고 포함.
+

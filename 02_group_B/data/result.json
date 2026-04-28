@@ -1,0 +1,151 @@
+{
+  "parse": {
+    "raw": "```json\n{\n  \"goal\": \"어머니 건강 유지 및 영양 공급\",\n  \"health_constraints\": {\n    \"warfarin\": true,\n    \"vitamin_k_restriction\": [\"브로콜리\", \"시금치\", \"케일\", \"근대\"],\n    \"texture\": \"부드러운 죽 형태\",\n    \"allergies\": [],\n    \"other_restrictions\": []\n  },\n  \"budget\": \"상관없음\",\n  \"preferences\": {\n    \"meat\": true,\n    \"egg\": false,\n    \"other_preferences\": []\n  },\n  \"duration\": \"1일\"\n}\n```\n"
+  },
+  "health": {
+    "raw": "```json\n{\n  \"critical_constraints\": [\n    {\n      \"type\": \"drug_interaction\",\n      \"drug\": \"와파린\",\n      \"food\": \"비타민 K 함유 채소 (브로콜리, 시금치 등)\",\n      \"severity\": \"출혈 위험\",\n      \"reason\": \"와파린 복용 중 비타민 K 섭취는 약효 저하를 유발합니다.\"\n    },\n    {\n      \"type\": \"allergy\",\n      \"food\": \"계란\",\n      \"severity\": \"알레르기 반응\",\n      \"reason\": \"사용자가 섭취를 원하지 않음\"\n    }\n  ],\n  \"medical_constraints\": [\n    {\n      \"type\": \"texture\",\n      \"limit\": \"죽 형태\",\n      \"reason\": \"삼킴 곤란\"\n    },\n    {\n      \"type\": \"protein_source",
+    "sample_nutrition": {
+      "items": [
+        {
+          "calories": 300,
+          "carbs": 65,
+          "protein": 6,
+          "fat": 0.5,
+          "sodium": 5,
+          "name": "밥"
+        },
+        {
+          "calories": 150,
+          "carbs": 8,
+          "protein": 10,
+          "fat": 5,
+          "sodium": 800,
+          "name": "된장찌개"
+        }
+      ],
+      "total": {
+        "calories": 450,
+        "carbs": 73,
+        "protein": 16,
+        "fat": 5.5,
+        "sodium": 805
+      }
+    }
+  },
+  "budget": {
+    "raw": "```json\n{\n  \"budget_summary\": {\n    \"total_budget\": \"35,000원/주 (추정)\",\n    \"daily_budget\": \"5,000원/일 (추정)\",\n    \"flexibility\": \"초기 투자 가능\"\n  },\n  \"cost_effective_items\": [\n    {\"item\": \"소고기 (다짐육)\", \"price\": \"10,000원/500g\", \"protein\": \"100g당 26g\", \"details\": \"다양한 죽에 활용 가능\"}\n  ],\n  \"bulk_purchase_strategy\": [\n    {\"item\": \"쌀\", \"quantity\": \"5kg\", \"price\": \"15,000원\", \"servings\": \"충분한 양의 죽 제조 가능\"}\n  ],\n  \"daily_allocation\": {\n    \"Day1\": \"4,800원\",\n    \"Day2\": \"4,900원\",\n    \"Day3\": \"5,100원\",\n    \"Day4",
+    "price_info": {
+      "ingredients": [
+        {
+          "price": 15000,
+          "unit": "1kg",
+          "category": "주식",
+          "name": "쌀"
+        },
+        {
+          "price": 5000,
+          "unit": "500g",
+          "category": "조미료",
+          "name": "된장"
+        },
+        {
+          "price": 2000,
+          "unit": "1팩",
+          "category": "단백질",
+          "name": "두부"
+        }
+      ],
+      "total_price": 22000
+    }
+  },
+  "plan": {
+    "raw": "```json\n{\n  \"meal\": \"lunch\",\n  \"dish\": \"소고기 두부 죽\",\n  \"brief_description\": \"와파린 복용 환자를 위한 안전한 식단입니다. 계란을 사용하지 않고, 비타민 K가 적은 재료를 사용하여 출혈 위험을 최소화합니다. 부드러운 죽 형태로 삼킴을 돕습니다.\",\n  \"estimated_cost\": \"3,000원\",\n  \"protein_g\": 20,\n  \"conflicts_detected\": [\n    \"와파린 복용 (비타민 K)\",\n    \"계란 알레르기\",\n    \"삼킴 곤란\"\n  ],\n  \"resolution_rationale\": \"와파린 복용으로 인한 출혈 위험을 고려하여 비타민 K 함량이 낮은 재료를 사용했습니다. 계란 알레르기를 고려하여 두부를 단백질 공급원으로 선택했습니다. 삼킴 곤란을 위해 죽 형태로 조리했습니다. 예산은 어머니의 건강을 위해 고려하지 않았습니다.\",\n  \"alternatives\": [\n    {\n      \""
+  },
+  "recipes": {
+    "korean": {
+      "raw": "```json\n{\n  \"dish_name\": \"두부 된장 죽\",\n  \"reason\": \"부드러운 식감으로 삼킴 곤란 환자에게 적합하며, 두부와 된장으로 단백질과 나트륨을 보충할 수 있습니다. 예산 내에서 쉽게 구할 수 있는 재료를 사용합니다.\",\n  \"cooking_method\": \"쌀을 불려 끓여 죽을 만들고, 두부와 된장을 넣어 끓입니다.\",\n  \"ingredients\": [\n    {\"item\": \"쌀\", \"amount\": \"50g\", \"price\": \"750원\"},\n    {\"item\": \"두부\", \"amount\": \"100g\", \"price\": \"1000원\"},\n    {\"item\": \"된장\", \"amount\": \"20g\", \"price\": \"200원\"}\n  ],\n  \"total_cost\": \"1950원\",\n  \"nutrition\": {\n    \"calories\": \"250kcal (추정)\",\n    \"protein_g\": 12,\n    \"gi_index\": 40",
+      "parsed": null,
+      "rag": {
+        "query": "korean 메뉴",
+        "count": 0,
+        "recipes": []
+      },
+      "prices": {
+        "ingredients": [
+          {
+            "price": 15000,
+            "unit": "1kg",
+            "category": "주식",
+            "name": "쌀"
+          },
+          {
+            "price": 5000,
+            "unit": "500g",
+            "category": "조미료",
+            "name": "된장"
+          },
+          {
+            "price": 2000,
+            "unit": "1팩",
+            "category": "단백질",
+            "name": "두부"
+          }
+        ],
+        "total_price": 22000
+      },
+      "cost_breakdown": {
+        "estimated_total": 22000,
+        "by_item": [
+          {
+            "name": "쌀",
+            "unit": "1kg",
+            "price": 15000
+          },
+          {
+            "name": "된장",
+            "unit": "500g",
+            "price": 5000
+          },
+          {
+            "name": "두부",
+            "unit": "1팩",
+            "price": 2000
+          }
+        ]
+      }
+    },
+    "japanese": {
+      "raw": "```json\n{\n  \"dish_name\": \"두부 된장국\",\n  \"reason\": \"예산 내에서 단백질과 영양을 챙길 수 있는 간편한 일식 메뉴입니다. 삼킴 곤란을 고려하여 부드러운 형태로 제공합니다. 계란 알레르기를 고려하여 계란은 사용하지 않습니다.\",\n  \"cooking_method\": \"끓이기\",\n  \"ingredients\": [\n    {\"item\": \"두부\", \"amount\": \"1/2모 (100g)\", \"price\": \"1000원\"},\n    {\"item\": \"된장\", \"amount\": \"2큰술\", \"price\": \"500원 (추정)\", \"details\":\"넉넉한 양을 구매하여 비용 절감\"},\n    {\"item\": \"쌀\", \"amount\": \"1/4 컵 (20g)\", \"price\": \"300원 (추정)\", \"details\": \"쌀을 미리 불려 조리시간을 단축\"},\n    {\"item\": \"물\", \"amount\": \"300ml\", \"price\": \"0원",
+      "rag": {
+        "query": "japanese 메뉴",
+        "count": 0,
+        "recipes": []
+      },
+      "prices": {
+        "ingredients": [
+          {
+            "price": 3000,
+            "unit": "1인분",
+            "category": "주식",
+            "name": "면"
+          },
+          {
+            "price": 6000,
+            "unit": "10개",
+            "category": "단백질",
+            "name": "계란"
+          },
+          {
+            "price": 2000,
+            "unit": "1단",
+            "category": "채소",
+            "name": "대파"
+          }
+        ],
+        "total_price": 11000
+      }
+    }
+  },
+  "final": "## 최종 식단 추천\n\n**점심 메뉴:** 소고기 두부 죽\n\n**선택 이유:** 와파린 복용 중이신 어머님을 위해 비타민 K가 적은 재료를 사용하고, 삼킴 곤란을 고려하여 부드러운 죽 형태로 제공합니다. 계란 알레르기는 없지만 선호하지 않아 제외했습니다. 단백질은 소고기를 통해 보충합니다. 예산은 건강을 최우선으로 고려하여 제한하지 않았습니다.\n\n**조리 개요:** 소고기와 두부를 주재료로 하여, 비타민 K 함량이 낮은 채소를 사용하고 부드럽게 끓여 죽 형태로 만듭니다.\n\n**준비 재료:**\n*   쌀: 50g (750원)\n*   소고기 (다짐육): 100g (3,000원)\n*   두부: 100g (1,000원)\n*   간장/참기름/소금 (조미료): (500원 추정)\n    *   총 예상 비용: 5,250원\n\n**영양 정보 (추정):**\n*   칼로리: 400kcal\n*   단백질: 25g\n*   GI: 50\n*   나트륨: 200mg (조절 가능)\n\n**건강 고려사항",
+  "total_response_time_seconds": 27.51
+}

@@ -1,0 +1,18 @@
+# MAS Meal Recommendation System - Requirements
+
+# Google Generative AI SDK
+google-generativeai>=0.3.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Data handling
+numpy>=1.24.0
+
+# YAML configuration
+pyyaml>=6.0
+
+# Optional: For enhanced API integrations
+requests>=2.31.0
+
+

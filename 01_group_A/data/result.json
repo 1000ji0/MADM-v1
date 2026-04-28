@@ -1,0 +1,294 @@
+{
+  "final_response": "저녁 식단으로 흰쌀밥 닭고기 된장 죽을 추천합니다.\n\n**레시피 (1인분):**\n\n*   **재료:** 흰쌀밥, 닭고기, 두부, 된장\n*   **조리 순서:**\n    1.  닭고기를 끓여 잘게 찢고, 두부와 함께 끓입니다.\n    2.  흰쌀밥을 넣고 끓여 죽을 만듭니다.\n    3.  된장으로 간을 합니다.\n\n**재료 비용 추정:** 쌀(일부), 닭고기(일부), 두부(일부), 된장(일부) - 약 10,000원\n\n**영양 정보 (추정):**",
+  "menu_plan": {
+    "raw_response": "```json\n{\n  \"meal_plan\": {\n    \"meal\": \"저녁\",\n    \"dish\": \"흰쌀밥 닭고기 된장 죽\",\n    \"brief_description\": \"와파린 복용으로 비타민 K 섭취를 제한하고 부드러운 식감을 위해 닭고기, 두부, 된장을 넣어 흰쌀밥으로 죽을 끓입니다.\"\n  },\n  \"conflict_resolution\": \"건강(비타민 K 제한)을 최우선으로 고려하여 메뉴를 구성했습니다.\",\n  \"recommende",
+    "health_result": {
+      "raw_response": "```json\n{\n  \"allergies\": [],\n  \"disease_constraints\": [\"와파린 복용으로 인한 비타민 K 제한\"],\n  \"nutrition_goals\": [],\n  \"preferences\": [\"부드러운 식감의 음식\"],\n  \"restricted_foods\": [\"비타민 K 함량이 높은 채소 (브로콜리, 시금치 등)\"],\n  \"recommended_foods\": []\n}\n```",
+      "nutrition_info": {
+        "items": [
+          {
+            "calories": 300,
+            "carbs": 65,
+            "protein": 6,
+            "fat": 0.5,
+            "sodium": 5,
+            "name": "밥"
+          },
+          {
+            "calories": 150,
+            "carbs": 8,
+            "protein": 10,
+            "fat": 5,
+            "sodium": 800,
+            "name": "된장찌개"
+          }
+        ],
+        "total": {
+          "calories": 450,
+          "carbs": 73,
+          "protein": 16,
+          "fat": 5.5,
+          "sodium": 805
+        }
+      },
+      "user_input": {
+        "raw_response": "```json\n{\n  \"goal\": \"...\",\n  \"health_constraints\": [],\n  \"budget\": \"...\",\n  \"preferences\": [],\n  \"duration\": \"1끼\"\n}\n```\n",
+        "user_input": "안녕하세요! 어머니가 82살인데 와파린 드세요. 비타민 K 많은 채소는 절대 안 된대요. 브로콜리나 시금치 같은 거요. 삼키기도 어려워하셔서 죽으로 만들어야 해요. 3일치 식단 짜주시고, 금지 채소는 절대 빼주세요!"
+      }
+    },
+    "budget_result": {
+      "raw_response": "```json\n{\n  \"total_budget\": \"사용자 예산 정보가 명시되지 않아 산출 불가\",\n  \"meals_count\": \"3일, 총 3끼 (1일 1끼)\",\n  \"budget_per_meal\": \"총 예산이 없어 인당 예산 산출 불가\",\n  \"recommended_ingredients\": [\n    \"쌀 (잡곡밥 대신 흰쌀밥)\",\n    \"소고기 (와규 등급 대신 일반 등급)\",\n    \"닭고기 (뼈 없는 닭가슴살 또는 다리살)\",",
+      "price_info": {
+        "ingredients": [
+          {
+            "price": 15000,
+            "unit": "1kg",
+            "name": "쌀"
+          },
+          {
+            "price": 5000,
+            "unit": "500g",
+            "name": "된장"
+          },
+          {
+            "price": 2000,
+            "unit": "1팩",
+            "name": "두부"
+          }
+        ],
+        "total_price": 22000
+      },
+      "user_input": {
+        "raw_response": "```json\n{\n  \"goal\": \"...\",\n  \"health_constraints\": [],\n  \"budget\": \"...\",\n  \"preferences\": [],\n  \"duration\": \"1끼\"\n}\n```\n",
+        "user_input": "안녕하세요! 어머니가 82살인데 와파린 드세요. 비타민 K 많은 채소는 절대 안 된대요. 브로콜리나 시금치 같은 거요. 삼키기도 어려워하셔서 죽으로 만들어야 해요. 3일치 식단 짜주시고, 금지 채소는 절대 빼주세요!"
+      }
+    }
+  },
+  "recipes": {
+    "korean": {
+      "raw_response": "```json\n{\n  \"menu_name\": \"3일간의 저예산 한식 식단 (1일 1끼)\",\n  \"cuisine_type\": \"한식\",\n  \"budget_focus\": true,\n  \"ingredients\": [\n    \"쌀 (흰쌀밥)\",\n    \"소고기 (불고기용, 일반 등급)\",\n    \"양파\",\n    \"당근\",\n    \"간장\",\n    \"설탕\",\n    \"마늘\",\n    \"된장\",\n    \"두부\",\n    \"대파\",\n    \"고춧가루\",",
+      "rag_result": {
+        "query": "예산 korean 메뉴",
+        "count": 2,
+        "recipes": [
+          {
+            "title": "불고기",
+            "description": "달콤한 불고기. 예산에 맞게 조절 가능.",
+            "ingredients": [
+              "소고기",
+              "양파",
+              "당근",
+              "간장",
+              "설탕",
+              "마늘"
+            ],
+            "steps": [
+              "고기를 양념에 재운다",
+              "야채를 준비한다",
+              "팬에 볶는다",
+              "양념을 넣고 졸인다"
+            ],
+            "cooking_time": 25,
+            "difficulty": "보통",
+            "tags": [
+              "한식",
+              "고기",
+              "예산"
+            ],
+            "match_score": 8
+          },
+          {
+            "title": "된장찌개",
+            "description": "전통 한식 된장찌개 레시피. 저염 버전도 가능합니다.",
+            "ingredients": [
+              "된장",
+              "두부",
+              "대파",
+              "양파",
+              "마늘",
+              "고춧가루"
+            ],
+            "steps": [
+              "냄비에 물을 넣고 끓인다",
+              "된장을 풀어 넣는다",
+              "두부와 채소를 넣고 끓인다",
+              "대파를 마지막에 넣는다"
+            ],
+            "cooking_time": 20,
+            "difficulty": "쉬움",
+            "tags": [
+              "한식",
+              "찌개",
+              "저염",
+              "예산"
+            ],
+            "match_score": 3
+          }
+        ]
+      },
+      "price_info": {
+        "ingredients": [
+          {
+            "price": 15000,
+            "unit": "1kg",
+            "name": "쌀"
+          },
+          {
+            "price": 5000,
+            "unit": "500g",
+            "name": "된장"
+          },
+          {
+            "price": 2000,
+            "unit": "1팩",
+            "name": "두부"
+          }
+        ],
+        "total_price": 22000
+      }
+    },
+    "japanese": {
+      "raw_response": "```json\n{\n  \"menu_name\": \"일본식 닭고기덮밥 (Oyakodon) & 된장국\",\n  \"cuisine_type\": \"일식\",\n  \"budget_focus\": true,\n  \"ingredients\": [\n    \"쌀 (흰쌀밥, 1인분)\",\n    \"닭고기 (뼈 없는 닭가슴살 또는 닭다리살, 100g)\",\n    \"양파 (1/4개)\",\n    \"계란 (2개)\",\n    \"쯔유 (또는 간장, 설탕, 맛술 1:1:1 비율로 섞어 사용)",
+      "rag_result": {
+        "query": "예산 japanese 메뉴",
+        "count": 2,
+        "recipes": [
+          {
+            "title": "라멘",
+            "description": "일본식 라멘. 예산에 맞게 재료 조절 가능.",
+            "ingredients": [
+              "면",
+              "국물",
+              "계란",
+              "대파",
+              "돼지고기",
+              "김"
+            ],
+            "steps": [
+              "국물을 끓인다",
+              "면을 삶는다",
+              "계란을 반숙으로 삶는다",
+              "모든 재료를 담는다"
+            ],
+            "cooking_time": 25,
+            "difficulty": "보통",
+            "tags": [
+              "일식",
+              "면",
+              "예산"
+            ],
+            "match_score": 8
+          },
+          {
+            "title": "우동",
+            "description": "간단한 우동. 저염 버전 가능.",
+            "ingredients": [
+              "우동면",
+              "다시마",
+              "간장",
+              "대파",
+              "김"
+            ],
+            "steps": [
+              "다시마로 육수를 만든다",
+              "면을 삶는다",
+              "국물에 간장을 넣는다",
+              "면과 함께 담는다"
+            ],
+            "cooking_time": 20,
+            "difficulty": "쉬움",
+            "tags": [
+              "일식",
+              "면",
+              "저염",
+              "예산"
+            ],
+            "match_score": 3
+          }
+        ]
+      },
+      "price_info": {
+        "ingredients": [
+          {
+            "price": 3000,
+            "unit": "1인분",
+            "name": "면"
+          },
+          {
+            "price": 6000,
+            "unit": "10개",
+            "name": "계란"
+          },
+          {
+            "price": 2000,
+            "unit": "1단",
+            "name": "대파"
+          }
+        ],
+        "total_price": 11000
+      }
+    }
+  },
+  "health_analysis": {
+    "raw_response": "```json\n{\n  \"allergies\": [],\n  \"disease_constraints\": [\"와파린 복용으로 인한 비타민 K 제한\"],\n  \"nutrition_goals\": [],\n  \"preferences\": [\"부드러운 식감의 음식\"],\n  \"restricted_foods\": [\"비타민 K 함량이 높은 채소 (브로콜리, 시금치 등)\"],\n  \"recommended_foods\": []\n}\n```",
+    "nutrition_info": {
+      "items": [
+        {
+          "calories": 300,
+          "carbs": 65,
+          "protein": 6,
+          "fat": 0.5,
+          "sodium": 5,
+          "name": "밥"
+        },
+        {
+          "calories": 150,
+          "carbs": 8,
+          "protein": 10,
+          "fat": 5,
+          "sodium": 800,
+          "name": "된장찌개"
+        }
+      ],
+      "total": {
+        "calories": 450,
+        "carbs": 73,
+        "protein": 16,
+        "fat": 5.5,
+        "sodium": 805
+      }
+    },
+    "user_input": {
+      "raw_response": "```json\n{\n  \"goal\": \"...\",\n  \"health_constraints\": [],\n  \"budget\": \"...\",\n  \"preferences\": [],\n  \"duration\": \"1끼\"\n}\n```\n",
+      "user_input": "안녕하세요! 어머니가 82살인데 와파린 드세요. 비타민 K 많은 채소는 절대 안 된대요. 브로콜리나 시금치 같은 거요. 삼키기도 어려워하셔서 죽으로 만들어야 해요. 3일치 식단 짜주시고, 금지 채소는 절대 빼주세요!"
+    }
+  },
+  "budget_analysis": {
+    "raw_response": "```json\n{\n  \"total_budget\": \"사용자 예산 정보가 명시되지 않아 산출 불가\",\n  \"meals_count\": \"3일, 총 3끼 (1일 1끼)\",\n  \"budget_per_meal\": \"총 예산이 없어 인당 예산 산출 불가\",\n  \"recommended_ingredients\": [\n    \"쌀 (잡곡밥 대신 흰쌀밥)\",\n    \"소고기 (와규 등급 대신 일반 등급)\",\n    \"닭고기 (뼈 없는 닭가슴살 또는 다리살)\",",
+    "price_info": {
+      "ingredients": [
+        {
+          "price": 15000,
+          "unit": "1kg",
+          "name": "쌀"
+        },
+        {
+          "price": 5000,
+          "unit": "500g",
+          "name": "된장"
+        },
+        {
+          "price": 2000,
+          "unit": "1팩",
+          "name": "두부"
+        }
+      ],
+      "total_price": 22000
+    },
+    "user_input": {
+      "raw_response": "```json\n{\n  \"goal\": \"...\",\n  \"health_constraints\": [],\n  \"budget\": \"...\",\n  \"preferences\": [],\n  \"duration\": \"1끼\"\n}\n```\n",
+      "user_input": "안녕하세요! 어머니가 82살인데 와파린 드세요. 비타민 K 많은 채소는 절대 안 된대요. 브로콜리나 시금치 같은 거요. 삼키기도 어려워하셔서 죽으로 만들어야 해요. 3일치 식단 짜주시고, 금지 채소는 절대 빼주세요!"
+    }
+  },
+  "total_response_time_seconds": 28.24
+}
